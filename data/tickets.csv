@@ -1,0 +1,251 @@
+ticket_id,created,resolved,category,priority,status,assignee,channel
+1001,2026-08-27 09:05,2026-08-31 03:34,Password reset,Low,Closed,Priya,Email
+1002,2026-08-27 10:06,2026-08-29 21:41,Access request,Low,Closed,Priya,Portal
+1003,2026-08-28 17:20,2026-08-30 08:58,Access request,Medium,Closed,Alex,Portal
+1004,2026-08-29 10:40,,Laptop hardware,Low,In progress,Sam,Slack
+1005,2026-08-29 11:23,2026-08-29 15:07,Password reset,Medium,Closed,Sam,Portal
+1006,2026-08-29 15:12,2026-08-29 22:05,Access request,High,Closed,Jordan,Portal
+1007,2026-08-29 16:19,,Password reset,Medium,In progress,Priya,Slack
+1008,2026-08-29 16:21,2026-08-30 20:01,Laptop hardware,Medium,Closed,Sam,Slack
+1009,2026-08-29 16:41,2026-09-01 04:13,Laptop hardware,Low,Closed,Alex,Slack
+1010,2026-08-30 09:20,2026-08-30 13:49,Wi-Fi / network,Medium,Closed,Priya,Email
+1011,2026-08-30 10:47,2026-09-01 14:29,Access request,Low,Closed,Sam,Slack
+1012,2026-08-30 14:34,2026-09-02 04:27,Password reset,Low,Closed,Alex,Slack
+1013,2026-08-31 08:20,2026-09-02 18:57,Access request,Low,Closed,Priya,Slack
+1014,2026-09-01 08:38,2026-09-02 23:22,Wi-Fi / network,Medium,Closed,Sam,Portal
+1015,2026-09-01 08:48,2026-09-04 14:48,VPN,Low,Closed,Alex,Slack
+1016,2026-09-01 08:57,2026-09-02 12:52,Wi-Fi / network,Medium,Closed,Alex,Email
+1017,2026-09-01 08:58,2026-09-02 05:50,Laptop hardware,Medium,Closed,Alex,Slack
+1018,2026-09-01 09:28,,Access request,Medium,In progress,Alex,Portal
+1019,2026-09-01 11:21,2026-09-05 02:56,Phishing report,Low,Closed,Alex,Portal
+1020,2026-09-01 11:27,2026-09-01 22:07,Access request,Medium,Closed,Priya,Slack
+1021,2026-09-02 13:05,,Email / calendar,Medium,In progress,Priya,Portal
+1022,2026-09-02 13:42,2026-09-02 18:10,Email / calendar,Medium,Closed,Jordan,Email
+1023,2026-09-02 13:54,2026-09-05 02:27,Email / calendar,Low,Closed,Priya,Portal
+1024,2026-09-02 16:23,2026-09-02 18:58,Wi-Fi / network,High,Closed,Priya,Portal
+1025,2026-09-03 08:05,2026-09-07 06:02,Password reset,Low,Closed,Priya,Slack
+1026,2026-09-03 08:14,2026-09-07 01:34,VPN,Low,Closed,Alex,Portal
+1027,2026-09-03 14:43,2026-09-05 05:52,Phishing report,Low,Closed,Alex,Portal
+1028,2026-09-03 16:05,2026-09-04 10:10,Password reset,Medium,Closed,Alex,Email
+1029,2026-09-04 08:18,2026-09-08 05:04,Email / calendar,Low,Closed,Sam,Slack
+1030,2026-09-04 10:34,2026-09-04 16:27,Access request,Medium,Closed,Alex,Slack
+1031,2026-09-04 13:49,2026-09-06 00:36,Access request,Low,Closed,Sam,Slack
+1032,2026-09-04 15:05,2026-09-05 08:36,Password reset,Medium,Closed,Alex,Slack
+1033,2026-09-05 10:07,,Access request,Low,Open,Alex,Slack
+1034,2026-09-05 10:46,2026-09-06 04:22,Access request,Medium,Closed,Alex,Portal
+1035,2026-09-05 12:47,2026-09-09 06:01,Laptop hardware,Low,Closed,Alex,Portal
+1036,2026-09-05 13:45,,Software install,High,In progress,Priya,Email
+1037,2026-09-05 16:43,2026-09-09 03:21,Password reset,Low,Closed,Alex,Slack
+1038,2026-09-06 08:28,2026-09-09 01:03,Wi-Fi / network,Low,Closed,Priya,Slack
+1039,2026-09-06 12:36,2026-09-07 13:04,Access request,Low,Closed,Priya,Slack
+1040,2026-09-06 17:14,2026-09-08 13:33,Wi-Fi / network,Low,Closed,Alex,Portal
+1041,2026-09-06 17:38,2026-09-08 22:55,Wi-Fi / network,Low,Closed,Alex,Portal
+1042,2026-09-07 10:19,2026-09-07 11:00,VPN,High,Closed,Sam,Portal
+1043,2026-09-07 10:40,2026-09-08 07:47,Wi-Fi / network,Low,Closed,Sam,Email
+1044,2026-09-07 14:02,2026-09-08 10:00,Phishing report,Medium,Closed,Alex,Portal
+1045,2026-09-07 16:58,,Access request,High,In progress,Sam,Email
+1046,2026-09-07 17:16,2026-09-11 06:33,Wi-Fi / network,Low,Closed,Priya,Slack
+1047,2026-09-07 17:18,,Password reset,Low,Open,Sam,Slack
+1048,2026-09-07 17:44,2026-09-08 00:50,VPN,High,Closed,Priya,Slack
+1049,2026-09-08 08:19,2026-09-09 13:38,Password reset,Medium,Closed,Alex,Slack
+1050,2026-09-08 14:17,2026-09-12 10:28,Password reset,Low,Closed,Alex,Email
+1051,2026-09-08 16:07,2026-09-08 22:19,Wi-Fi / network,Medium,Closed,Priya,Slack
+1052,2026-09-08 16:38,2026-09-08 22:27,,Medium,Closed,Alex,Portal
+1053,2026-09-08 17:28,2026-09-12 18:57,Access request,Low,Closed,Jordan,Slack
+1054,2026-09-09 08:45,2026-09-09 10:48,Wi-Fi / network,High,Closed,Sam,Slack
+1055,2026-09-09 10:59,2026-09-13 10:37,,Low,Closed,Sam,Portal
+1056,2026-09-10 09:43,2026-09-13 21:18,Access request,Low,Closed,Alex,Slack
+1057,2026-09-10 11:20,2026-09-10 15:51,Password reset,High,Closed,Alex,Portal
+1058,2026-09-10 12:32,,Password reset,Low,In progress,Priya,Slack
+1059,2026-09-10 14:18,2026-09-11 04:50,Wi-Fi / network,Medium,Closed,Sam,Portal
+1060,2026-09-10 14:23,2026-09-12 10:55,Access request,Low,Closed,Jordan,Portal
+1061,2026-09-10 16:13,2026-09-12 03:15,Password reset,Medium,Closed,Jordan,Email
+1062,2026-09-10 16:57,2026-09-11 22:40,Password reset,Low,Closed,Sam,Slack
+1063,2026-09-11 13:50,2026-09-11 14:37,Email / calendar,High,Closed,Priya,Slack
+1064,2026-09-11 14:31,2026-09-11 22:07,Email / calendar,Medium,Closed,Jordan,Portal
+1065,2026-09-11 15:09,,Wi-Fi / network,Medium,Open,Alex,Email
+1066,2026-09-11 17:19,2026-09-11 19:56,Access request,Medium,Closed,Alex,Email
+1067,2026-09-12 10:34,2026-09-12 13:50,Password reset,High,Closed,Priya,Email
+1068,2026-09-12 10:45,2026-09-13 04:30,Password reset,Medium,Closed,Priya,Slack
+1069,2026-09-12 15:40,2026-09-12 22:47,Password reset,Medium,Closed,Jordan,Portal
+1070,2026-09-13 11:45,2026-09-13 17:12,Wi-Fi / network,Medium,Closed,Sam,Slack
+1071,2026-09-13 11:59,2026-09-14 20:03,Password reset,Medium,Closed,Sam,Slack
+1072,2026-09-13 12:37,2026-09-14 14:52,Wi-Fi / network,Medium,Closed,Sam,Email
+1073,2026-09-13 14:54,2026-09-15 09:40,Wi-Fi / network,Low,Closed,Alex,Portal
+1074,2026-09-13 16:01,2026-09-14 19:00,Access request,Medium,Closed,Alex,Email
+1075,2026-09-14 09:33,2026-09-14 20:43,Phishing report,Low,Closed,Priya,Slack
+1076,2026-09-14 09:36,2026-09-16 14:53,Software install,Low,Closed,Alex,Portal
+1077,2026-09-14 11:48,2026-09-15 18:28,Access request,Medium,Closed,Alex,Slack
+1078,2026-09-14 12:23,2026-09-17 17:11,Password reset,Low,Closed,Alex,Portal
+1079,2026-09-14 13:28,2026-09-16 17:19,Password reset,Low,Closed,Alex,Portal
+1080,2026-09-14 14:43,2026-09-15 13:09,Email / calendar,Low,Closed,Priya,Slack
+1081,2026-09-14 14:52,,Access request,Low,In progress,Jordan,Email
+1082,2026-09-14 16:29,2026-09-15 01:36,Software install,Medium,Closed,Sam,Slack
+1083,2026-09-14 17:46,2026-09-16 09:33,Email / calendar,Low,Closed,Alex,Email
+1084,2026-09-15 08:05,2026-09-16 00:24,Software install,Medium,Closed,Priya,Email
+1085,2026-09-15 13:36,2026-09-20 00:49,Password reset,Low,Closed,Jordan,Portal
+1086,2026-09-16 09:01,2026-09-17 14:58,Laptop hardware,Low,Closed,Alex,Portal
+1087,2026-09-16 10:50,2026-09-16 21:21,Password reset,Medium,Closed,Sam,Slack
+1088,2026-09-16 11:39,2026-09-17 18:21,Password reset,Medium,Closed,Sam,Portal
+1089,2026-09-16 12:29,2026-09-16 14:50,Software install,Medium,Closed,Jordan,Slack
+1090,2026-09-16 12:32,2026-09-18 00:56,Access request,Medium,Closed,Alex,Slack
+1091,2026-09-16 16:17,2026-09-16 19:03,Password reset,High,Closed,Priya,Slack
+1092,2026-09-17 08:57,2026-09-17 11:22,Laptop hardware,High,Closed,Priya,Slack
+1093,2026-09-17 09:15,2026-09-18 22:14,Access request,Medium,Closed,Sam,Portal
+1094,2026-09-17 13:36,2026-09-17 18:14,Phishing report,Medium,Closed,Sam,Email
+1095,2026-09-17 14:15,2026-09-21 17:53,Laptop hardware,Low,Closed,Jordan,Slack
+1096,2026-09-18 08:00,2026-09-19 21:55,Access request,Medium,Closed,Sam,Slack
+1097,2026-09-18 10:34,2026-09-19 07:53,Software install,Low,Closed,Jordan,Portal
+1098,2026-09-18 12:01,2026-09-18 19:43,VPN,High,Closed,Priya,Portal
+1099,2026-09-18 16:47,2026-09-22 16:22,Access request,Low,Closed,Sam,Portal
+1100,2026-09-20 08:09,2026-09-20 12:52,Password reset,High,Closed,Jordan,Portal
+1101,2026-09-20 08:22,,Access request,Medium,Open,,Slack
+1102,2026-09-20 09:03,2026-09-24 12:45,Password reset,Low,Closed,Priya,Slack
+1103,2026-09-20 09:04,2026-09-21 06:17,Password reset,Medium,Closed,Alex,Slack
+1104,2026-09-20 10:10,2026-09-21 11:19,Wi-Fi / network,Medium,Closed,Sam,Slack
+1105,2026-09-20 13:29,2026-09-23 03:57,Access request,Low,Closed,Alex,Portal
+1106,2026-09-20 15:17,2026-09-20 16:20,Wi-Fi / network,High,Closed,Jordan,Email
+1107,2026-09-20 17:06,2026-09-22 08:36,Wi-Fi / network,Low,Closed,Priya,Slack
+1108,2026-09-21 10:26,2026-09-25 11:46,Laptop hardware,Low,Closed,Sam,Slack
+1109,2026-09-21 10:59,2026-09-22 22:27,Software install,Medium,Closed,Alex,Portal
+1110,2026-09-21 12:52,,Access request,Low,Open,Sam,Portal
+1111,2026-09-21 17:20,2026-09-25 19:49,Wi-Fi / network,Low,Closed,Sam,Portal
+1112,2026-09-22 08:40,2026-09-22 19:51,Software install,Medium,Closed,Priya,Slack
+1113,2026-09-22 10:41,2026-09-23 03:15,Password reset,Low,Closed,Alex,Email
+1114,2026-09-22 13:19,2026-09-23 10:48,Phishing report,Medium,Closed,Alex,Email
+1115,2026-09-22 14:37,2026-09-23 10:59,Wi-Fi / network,Low,Closed,Alex,Email
+1116,2026-09-23 08:42,2026-09-24 15:49,Password reset,Medium,Closed,Alex,Portal
+1117,2026-09-23 12:29,2026-09-24 06:49,Software install,Medium,Closed,Alex,Portal
+1118,2026-09-23 14:49,2026-09-24 14:39,Password reset,Medium,Closed,Alex,Portal
+1119,2026-09-24 15:17,2026-09-24 21:33,Access request,Medium,Closed,Priya,Portal
+1120,2026-09-24 15:31,,Password reset,Low,In progress,Jordan,Slack
+1121,2026-09-24 16:06,2026-09-25 11:49,Password reset,Medium,Closed,Alex,Slack
+1122,2026-09-25 11:14,2026-09-26 07:39,Wi-Fi / network,Low,Closed,Sam,Portal
+1123,2026-09-25 12:32,2026-09-27 12:34,Wi-Fi / network,Low,Closed,Priya,Slack
+1124,2026-09-25 17:56,2026-09-28 21:13,Password reset,Low,Closed,Alex,Slack
+1125,2026-09-26 08:40,2026-09-27 00:51,Password reset,Medium,Closed,Alex,Portal
+1126,2026-09-26 11:12,2026-09-27 19:56,Password reset,Low,Closed,Alex,Slack
+1127,2026-09-26 11:12,2026-09-28 15:59,,Low,Closed,Sam,Slack
+1128,2026-09-26 13:35,2026-09-30 05:53,Software install,Low,Closed,Alex,Email
+1129,2026-09-26 15:01,,Wi-Fi / network,High,In progress,Alex,Slack
+1130,2026-09-26 15:28,2026-09-28 06:09,Password reset,Medium,Closed,Jordan,Slack
+1131,2026-09-26 16:33,2026-09-28 08:25,Wi-Fi / network,Medium,Closed,Alex,Slack
+1132,2026-09-27 08:43,,Password reset,Low,In progress,Alex,Slack
+1133,2026-09-27 12:44,2026-09-28 01:04,Wi-Fi / network,Medium,Closed,Priya,Portal
+1134,2026-09-27 14:52,2026-09-28 23:18,Password reset,Low,Closed,Sam,Slack
+1135,2026-09-27 17:39,2026-09-29 09:18,Wi-Fi / network,Low,Closed,Alex,Slack
+1136,2026-09-28 09:30,2026-09-28 23:00,Wi-Fi / network,Medium,Closed,Alex,Slack
+1137,2026-09-28 11:34,2026-09-30 02:15,Password reset,Medium,Closed,Jordan,Portal
+1138,2026-09-28 13:28,2026-09-28 20:29,Access request,High,Closed,Jordan,Email
+1139,2026-09-28 15:49,2026-09-29 08:19,Laptop hardware,Medium,Closed,Jordan,Slack
+1140,2026-09-28 16:45,2026-09-30 08:08,Software install,Medium,Closed,Priya,Email
+1141,2026-09-29 08:18,2026-09-29 23:39,Software install,Medium,Closed,Alex,Slack
+1142,2026-09-29 10:08,2026-09-30 14:52,Laptop hardware,Medium,Closed,Sam,Email
+1143,2026-09-29 17:25,2026-10-01 09:18,Laptop hardware,Medium,Closed,Priya,Slack
+1144,2026-09-29 17:25,2026-09-30 10:27,Access request,Medium,Closed,Alex,Portal
+1145,2026-10-01 08:20,2026-10-02 22:20,Access request,Medium,Closed,Sam,Slack
+1146,2026-10-01 09:11,2026-10-03 15:47,Access request,Low,Closed,Alex,Slack
+1147,2026-10-01 16:59,2026-10-04 23:33,VPN,Low,Closed,Alex,Portal
+1148,2026-10-02 08:24,2026-10-03 16:11,VPN,Medium,Closed,Priya,Portal
+1149,2026-10-02 12:29,2026-10-03 04:20,Access request,Medium,Closed,Alex,Portal
+1150,2026-10-02 14:49,2026-10-03 15:32,Password reset,Medium,Closed,Priya,Portal
+1151,2026-10-03 10:35,2026-10-03 18:15,Access request,High,Closed,Sam,Email
+1152,2026-10-03 14:23,2026-10-03 15:16,Access request,High,Closed,Alex,Slack
+1153,2026-10-03 15:45,2026-10-04 00:26,Software install,Medium,Closed,Sam,Portal
+1154,2026-10-03 15:48,2026-10-03 17:19,Access request,High,Closed,Alex,Slack
+1155,2026-10-04 08:06,2026-10-05 17:58,VPN,Medium,Closed,Sam,Portal
+1156,2026-10-04 08:11,2026-10-07 00:12,Software install,Low,Closed,Alex,Portal
+1157,2026-10-04 08:25,2026-10-05 23:12,Password reset,Medium,Closed,Sam,Portal
+1158,2026-10-04 08:55,2026-10-05 17:52,Access request,Low,Closed,Priya,Email
+1159,2026-10-04 11:41,,Password reset,High,Open,Alex,Slack
+1160,2026-10-04 17:19,2026-10-05 11:26,Password reset,Medium,Closed,Sam,Slack
+1161,2026-10-05 10:31,2026-10-07 05:27,Password reset,Low,Closed,Alex,Slack
+1162,2026-10-05 12:37,2026-10-05 17:49,Password reset,Low,Closed,Sam,Slack
+1163,2026-10-05 12:55,2026-10-05 19:12,Software install,High,Closed,Priya,Slack
+1164,2026-10-05 14:46,2026-10-06 10:31,Password reset,Medium,Closed,Priya,Portal
+1165,2026-10-05 14:51,2026-10-09 00:45,Software install,Low,Closed,Alex,Slack
+1166,2026-10-05 16:48,2026-10-06 12:06,Software install,Medium,Closed,Alex,Slack
+1167,2026-10-06 08:13,2026-10-07 14:48,Password reset,Medium,Closed,Alex,Slack
+1168,2026-10-06 09:46,2026-10-08 19:31,Software install,Low,Closed,Alex,Slack
+1169,2026-10-06 11:16,2026-10-07 14:47,Laptop hardware,Medium,Closed,Alex,Slack
+1170,2026-10-06 14:38,2026-10-07 06:53,Password reset,Low,Closed,Alex,Portal
+1171,2026-10-06 17:14,2026-10-07 19:22,Software install,Medium,Closed,Sam,Slack
+1172,2026-10-07 10:10,2026-10-08 15:07,Email / calendar,Medium,Closed,Jordan,Slack
+1173,2026-10-07 14:08,2026-10-09 03:46,Laptop hardware,Medium,Closed,Alex,Portal
+1174,2026-10-07 15:15,2026-10-10 19:51,Password reset,Low,Closed,Alex,Slack
+1175,2026-10-07 16:00,2026-10-07 21:32,Wi-Fi / network,Medium,Closed,Jordan,Email
+1176,2026-10-08 11:19,2026-10-08 13:36,Password reset,High,Closed,Priya,Slack
+1177,2026-10-08 12:46,2026-10-12 22:59,Password reset,Low,Closed,Alex,Email
+1178,2026-10-09 08:03,2026-10-10 12:33,Wi-Fi / network,Medium,Closed,Jordan,Portal
+1179,2026-10-09 17:02,2026-10-10 15:36,Access request,Low,Closed,Priya,Slack
+1180,2026-10-09 17:44,2026-10-12 08:38,Password reset,Low,Closed,Alex,Portal
+1181,2026-10-10 08:41,2026-10-11 00:47,Wi-Fi / network,Medium,Closed,Sam,Slack
+1182,2026-10-10 11:11,2026-10-11 18:04,Laptop hardware,Medium,Closed,Alex,Portal
+1183,2026-10-10 15:46,2026-10-11 12:24,Password reset,Medium,Closed,Sam,Slack
+1184,2026-10-11 12:28,2026-10-11 15:06,Wi-Fi / network,High,Closed,Alex,Slack
+1185,2026-10-11 12:35,2026-10-13 02:21,Software install,Medium,Closed,Sam,Slack
+1186,2026-10-11 12:56,2026-10-11 18:23,Password reset,High,Closed,Alex,Email
+1187,2026-10-11 14:36,2026-10-12 03:50,Email / calendar,Medium,Closed,Alex,Slack
+1188,2026-10-11 15:41,,Software install,Low,Open,,Portal
+1189,2026-10-11 17:38,2026-10-11 18:44,Access request,High,Closed,Priya,Portal
+1190,2026-10-12 10:30,2026-10-13 16:54,Wi-Fi / network,Medium,Closed,Priya,Portal
+1191,2026-10-12 10:51,,Password reset,Low,Open,Alex,Portal
+1192,2026-10-13 13:38,2026-10-13 20:35,Access request,High,Closed,Jordan,Portal
+1193,2026-10-13 14:26,2026-10-13 22:24,VPN,Medium,Closed,Alex,Email
+1194,2026-10-13 15:25,2026-10-16 15:33,Laptop hardware,Low,Closed,Alex,Portal
+1195,2026-10-14 08:28,2026-10-14 16:13,Laptop hardware,Medium,Closed,Priya,Email
+1196,2026-10-14 09:02,2026-10-16 09:28,Password reset,Low,Closed,Jordan,Slack
+1197,2026-10-14 10:01,2026-10-14 17:53,Wi-Fi / network,High,Closed,Sam,Portal
+1198,2026-10-14 17:32,,Password reset,Medium,In progress,Priya,Slack
+1199,2026-10-15 08:53,2026-10-16 05:42,VPN,Medium,Closed,Jordan,Slack
+1200,2026-10-15 12:29,2026-10-17 01:34,Wi-Fi / network,Medium,Closed,Jordan,Email
+1201,2026-10-15 15:33,2026-10-16 14:53,Access request,Medium,Closed,Alex,Slack
+1202,2026-10-16 08:26,2026-10-17 08:59,Software install,Medium,Closed,Alex,Slack
+1203,2026-10-16 08:32,2026-10-16 10:25,Password reset,High,Closed,Sam,Email
+1204,2026-10-16 09:18,2026-10-17 11:21,Laptop hardware,Medium,Closed,Sam,Slack
+1205,2026-10-16 12:28,2026-10-17 08:05,Password reset,Low,Closed,Jordan,Slack
+1206,2026-10-16 12:33,2026-10-18 13:24,Laptop hardware,Low,Closed,Priya,Slack
+1207,2026-10-16 14:38,2026-10-16 17:59,Phishing report,High,Closed,Priya,Slack
+1208,2026-10-16 16:40,2026-10-20 06:46,Password reset,Low,Closed,Sam,Portal
+1209,2026-10-17 09:10,2026-10-18 03:10,Access request,Medium,Closed,Alex,Portal
+1210,2026-10-17 10:48,2026-10-18 14:24,Wi-Fi / network,Medium,Closed,Sam,Slack
+1211,2026-10-17 12:24,2026-10-18 10:50,Email / calendar,Medium,Closed,Alex,Slack
+1212,2026-10-17 12:52,2026-10-17 13:48,Email / calendar,High,Closed,Priya,Slack
+1213,2026-10-17 15:02,2026-10-17 22:46,Email / calendar,High,Closed,Alex,Email
+1214,2026-10-18 09:15,2026-10-20 04:04,Software install,Low,Closed,Priya,Email
+1215,2026-10-18 11:04,2026-10-18 16:02,Software install,Low,Closed,Alex,Portal
+1216,2026-10-18 16:40,2026-10-19 23:50,Email / calendar,Medium,Closed,Priya,Portal
+1217,2026-10-18 16:56,2026-10-21 05:12,Access request,Low,Closed,Sam,Slack
+1218,2026-10-18 17:36,2026-10-20 01:24,Password reset,Medium,Closed,Alex,Slack
+1219,2026-10-19 09:30,2026-10-20 01:15,Password reset,Medium,Closed,Priya,Portal
+1220,2026-10-19 15:58,2026-10-20 16:56,Wi-Fi / network,Medium,Closed,Jordan,Slack
+1221,2026-10-19 16:32,2026-10-21 00:01,Software install,Medium,Closed,Jordan,Slack
+1222,2026-10-20 10:16,2026-10-20 11:34,Software install,High,Closed,Alex,Slack
+1223,2026-10-20 13:54,,Access request,Medium,In progress,Jordan,Email
+1224,2026-10-20 17:47,2026-10-21 11:55,Software install,Low,Closed,Alex,Portal
+1225,2026-10-21 08:19,,Access request,Medium,Open,,Slack
+1226,2026-10-21 13:25,2026-10-22 00:39,Email / calendar,Medium,Closed,Alex,Email
+1227,2026-10-22 14:23,2026-10-23 20:52,Email / calendar,Medium,Closed,Alex,Slack
+1228,2026-10-22 16:03,2026-10-23 03:21,Access request,Low,Closed,Alex,Portal
+1229,2026-10-22 17:44,2026-10-23 23:28,Software install,Low,Closed,Alex,Portal
+1230,2026-10-23 09:41,2026-10-24 08:01,VPN,Medium,Closed,Jordan,Email
+1231,2026-10-23 10:32,2026-10-24 15:21,Wi-Fi / network,Low,Closed,Priya,Email
+1232,2026-10-23 13:53,2026-10-24 16:22,Wi-Fi / network,Medium,Closed,Alex,Portal
+1233,2026-10-23 16:14,2026-10-23 20:13,Password reset,Medium,Closed,Sam,Slack
+1234,2026-10-23 16:26,2026-10-26 07:30,Password reset,Low,Closed,Alex,Email
+1235,2026-10-23 16:29,,Wi-Fi / network,Low,In progress,Sam,Slack
+1236,2026-10-23 17:47,2026-10-24 00:00,Password reset,High,Closed,Alex,Portal
+1237,2026-10-24 08:05,,Access request,Medium,Open,Sam,Slack
+1238,2026-10-24 12:31,2026-10-24 14:46,Access request,High,Closed,Alex,Portal
+1239,2026-10-24 12:50,2026-10-25 12:51,Access request,Medium,Closed,Alex,Slack
+1240,2026-10-24 13:13,2026-10-26 03:20,Software install,Medium,Closed,Alex,Email
+1241,2026-10-24 14:01,2026-10-24 18:58,Access request,Medium,Closed,Priya,Slack
+1242,2026-10-24 15:38,,Password reset,Low,Open,Priya,Email
+1243,2026-10-25 08:50,,Laptop hardware,Medium,Open,,Slack
+1244,2026-10-25 09:22,2026-10-26 10:02,Password reset,Medium,Closed,Jordan,Portal
+1245,2026-10-25 09:41,,Access request,Medium,Open,,Slack
+1246,2026-10-25 09:56,2026-10-26 08:51,Password reset,Low,Closed,Alex,Portal
+1247,2026-10-25 12:50,,Password reset,Low,In progress,Alex,Slack
+1248,2026-10-25 14:03,2026-10-26 06:15,Password reset,Medium,Closed,Alex,Slack
+1249,2026-10-26 09:45,,Password reset,Medium,Open,Alex,Slack
+1250,2026-10-26 10:26,,Access request,Low,Open,Jordan,Portal
