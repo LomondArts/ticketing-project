@@ -29,6 +29,7 @@ CATEGORIES = {  # category: how common it is (relative weight)
     "Email / calendar": 8,
     "VPN": 6,
     "Phishing report": 4,
+    "Printer":4,
 }
 PRIORITIES = {"High": 15, "Medium": 50, "Low": 35}
 
@@ -37,7 +38,7 @@ PRIORITIES = {"High": 15, "Medium": 50, "Low": 35}
 RESOLVE_HOURS = {"High": (0.5, 8), "Medium": (2, 40), "Low": (4, 110)}
 
 ASSIGNEES = {"Alex": 40, "Priya": 25, "Sam": 20, "Jordan": 15}  # deliberately uneven workload
-CHANNELS = {"Slack": 50, "Portal": 30, "Email": 20}
+CHANNELS = {"Slack": 50, "Portal": 30, "Email": 20, "Phone": 10, "Walk-in": 5}
 
 OPEN_RATE = 0.12          # extra share of tickets left open (stalled/backlog)
 UNASSIGNED_RATE = 0.30    # share of OPEN tickets with no assignee
