@@ -63,7 +63,19 @@ def workload(tickets):
 
 def sla_summary(tickets):
     """Breaches and breach rate per priority (closed tickets only)."""
-    ...
+    # Returns a DataFrame with breach counts and rates per priority.
+    closed = tickets[tickets['status'] == 'Closed']
+
+    # Merge the SLA targets onto the closed tickets, then calculate whether each ticket breached its SLA.
+    closed = closed.merge(SLA_TARGETS, on='priority', how='left')
+    # Calculate the resolution time in hours, and whether it breached the SLA.
+    closed['sla_breached'] = closed['resolution_hours'] > closed['sla_hours']
+    # Group by priority, count tickets, sum breaches, and calculate breach rate.
+    summary = closed.groupby('priority')['sla_breached'].agg(['count', 'sum', 'mean'])
+    summary.columns = ['tickets', 'breaches', 'breach_rate']
+    summary['breach_rate'] = (summary['breach_rate'] *100).round(1) 
+    summary = summary.reindex(['High', 'Medium', 'Low'])  # put priorities in a logical order
+    return summary
 
 
 def main():
@@ -81,8 +93,10 @@ def main():
 
     ticket_workload = workload(tickets)
     print(ticket_workload)
-    
-    
+
+    breach_of_sla = sla_summary(tickets)
+    print(breach_of_sla)
+
     # call each function, print the result, save to OUTPUT_DIR
 
 
