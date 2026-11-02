@@ -11,7 +11,7 @@ import numpy as np
 
 DATA_FILE = "data/tickets.csv"
 OUTPUT_DIR = Path("output")
-AS_OF = datetime(2026, 10, 27, 12, 0)   # report date, matching the generator
+AS_OF = datetime(2026, 10, 27, 12, 0)   # fixed report date, matching the generator, so dates don't change between runs
 SLA_TARGETS = pd.DataFrame({"priority": ["High", "Medium", "Low"],
                             "sla_hours": [4, 24, 72]})
 
@@ -20,10 +20,11 @@ def load_tickets(path):
     """Read the CSV, convert dates, fill blank categories, add resolution_hours and age_days."""
     tickets = pd.read_csv(path, parse_dates=['created', 'resolved'])
     
-
+    # Blank categories become 'Uncategorised', so that they still show up in counts. 
     tickets['category'] = tickets['category'].fillna('Uncategorised')
-
     tickets['resolution_hours'] = (tickets['resolved'] - tickets['created']).dt.total_seconds() / 3600
+
+    # Only open tickets get an age: closed one are finished, so waiting time doesn't apply. Round to 1 decimal place for easier reading.
     tickets['age_days'] = (AS_OF - tickets['created']).dt.total_seconds() / 3600 / 24
     tickets['age_days'] = np.where( tickets['status'] != 'Closed', tickets['age_days'], np.nan)
     tickets['age_days'] = tickets['age_days'].round(1)
@@ -33,17 +34,23 @@ def load_tickets(path):
 
 def volume_by_category(tickets):
     """How many tickets per category?"""
-    ...
+
+    # Returns the value counts of each category, as a percentage of total tickets.
+    return (tickets['category'].value_counts(normalize=True) * 100).round(1)
+
+
+  
 
 
 def backlog(tickets):
     """Open tickets with their age in days, oldest first."""
-    ...
+    # Returns a DataFrame of open tickets, sorted by age_days descending.
+    return tickets[tickets['status'] != 'Closed'].sort_values('age_days', ascending=False)
 
 
 def unassigned(tickets):
     """Open tickets with nobody assigned."""
-    ...
+    
 
 
 def workload(tickets):
@@ -59,8 +66,13 @@ def sla_summary(tickets):
 def main():
     tickets = load_tickets(DATA_FILE)
     print(f"Loaded {len(tickets)} tickets")
-   
-    
+
+    categories = volume_by_category(tickets)
+    print(categories)
+
+    open_queue = backlog(tickets)
+    print(open_queue)
+
     # call each function, print the result, save to OUTPUT_DIR
 
 
