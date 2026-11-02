@@ -61,9 +61,8 @@ def random_created(now):
 
 
 def main():
-    now = datetime.now()
+    now = datetime(2026, 10, 27, 12, 0)  # pretend it's noon on this date, so the data is always the same
     rows = []
-
     for _ in range(NUM_TICKETS):
         created = random_created(now)
         priority = weighted_choice(PRIORITIES)
