@@ -50,7 +50,9 @@ def backlog(tickets):
 
 def unassigned(tickets):
     """Open tickets with nobody assigned."""
-    
+    # Returns a dataframe with open tickets that have no employee assigned.
+    return tickets[tickets['assignee'].isna() & (tickets['status'] != 'Closed')]
+
 
 
 def workload(tickets):
@@ -73,6 +75,9 @@ def main():
     open_queue = backlog(tickets)
     print(open_queue)
 
+    no_owner = unassigned(tickets)
+    print(no_owner)
+    
     # call each function, print the result, save to OUTPUT_DIR
 
 
