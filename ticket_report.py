@@ -57,7 +57,8 @@ def unassigned(tickets):
 
 def workload(tickets):
     """Open tickets per assignee."""
-    ...
+    # Returns a Series of open tickets per assignee, sorted descending.
+    return tickets[tickets['status'] != 'Closed'].groupby('assignee').size().sort_values(ascending=False)
 
 
 def sla_summary(tickets):
@@ -77,6 +78,10 @@ def main():
 
     no_owner = unassigned(tickets)
     print(no_owner)
+
+    ticket_workload = workload(tickets)
+    print(ticket_workload)
+    
     
     # call each function, print the result, save to OUTPUT_DIR
 
