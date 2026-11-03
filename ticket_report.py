@@ -60,7 +60,7 @@ def unassigned(tickets):
 def workload(tickets):
     """Open tickets per assignee."""
     # Returns a Series of open tickets per assignee, sorted descending.
-    return tickets[tickets['status'] != 'Closed'].groupby('assignee').size().sort_values(ascending=False)
+    return tickets[tickets['status'] != 'Closed'].groupby('assignee').size().sort_values(ascending=False).rename('open_tickets')
 
 
 def sla_summary(tickets):
@@ -81,6 +81,7 @@ def sla_summary(tickets):
 
 
 def main():
+    OUTPUT_DIR.mkdir(exist_ok=True)
     tickets = load_tickets(DATA_FILE)
     print(f"Loaded {len(tickets)} tickets")
 
@@ -88,24 +89,29 @@ def main():
     categories = volume_by_category(tickets)
     print('\nTickets by category:')
     print(categories)
+    categories.to_csv(OUTPUT_DIR / "tickets_by_category.csv")
 
     open_queue = backlog(tickets)
     print('\nOpen tickets (oldest first):')
     print(open_queue)
+    open_queue.to_csv(OUTPUT_DIR / "open_tickets.csv", index=False)
 
     no_owner = unassigned(tickets)
     print('\nUnassigned tickets:')
     print(no_owner)
+    no_owner.to_csv(OUTPUT_DIR / "unassigned_tickets.csv", index=False)
 
     ticket_workload = workload(tickets)
     print('\nWorkload per assignee:')
     print(ticket_workload)
+    ticket_workload.to_csv(OUTPUT_DIR / "workload_per_assignee.csv")
 
     breach_of_sla = sla_summary(tickets)
     print('\nSLA summary:')
     print(breach_of_sla)
+    breach_of_sla.to_csv(OUTPUT_DIR / "sla_summary.csv")
 
-    # call each function, print the result, save to OUTPUT_DIR
+    
 
 
 if __name__ == "__main__":
