@@ -77,7 +77,25 @@ def sla_summary(tickets):
     summary.columns = ['tickets', 'breaches', 'breach_rate']
     summary['breach_rate'] = (summary['breach_rate'] *100).round(1) 
     summary = summary.reindex(['High', 'Medium', 'Low'])  # put priorities in a logical order
+
+    # Overall total, with the rate worked out from the totals (not an average of rates)
+    total_tickets = summary['tickets'].sum()
+    total_breaches = summary['breaches'].sum()
+    summary.loc['All'] = [total_tickets, total_breaches, round(total_breaches / total_tickets * 100, 1)]
+    summary[['tickets', 'breaches']] = summary[['tickets', 'breaches']].astype(int)
     return summary
+
+def weekly_summary(tickets, categories, open_queue, no_owner, ticket_workload, breach_of_sla):
+    """Plain-English summary of the week's reports, for a team meeting."""
+    lines = [
+        f"Weekly IT support summary (as of {AS_OF:%d %b %Y})",
+        f"- {len(tickets)} tickets in total; most common: {categories.index[0]} ({categories.iloc[0]})",
+        f"- {len(open_queue)} tickets open; oldest has waited {open_queue['age_days'].max()} days",
+        f"- {len(no_owner)} open tickets have no owner",
+        f"- {ticket_workload.index[0]} holds the most open tickets ({ticket_workload.iloc[0]})",
+        f"- SLA: {breach_of_sla.loc['All', 'breaches']} of {breach_of_sla.loc['All', 'tickets']} closed tickets breached; {breach_of_sla['breach_rate'].idxmax()} was worst ({breach_of_sla['breach_rate'].max()}%)",
+    ]
+    return "\n".join(lines)
 
 
 def main():
@@ -111,6 +129,9 @@ def main():
     print(breach_of_sla)
     breach_of_sla.to_csv(OUTPUT_DIR / "sla_summary.csv")
 
+    summary = weekly_summary(tickets, categories, open_queue, no_owner, ticket_workload, breach_of_sla)
+    print("\n" + summary)
+    (OUTPUT_DIR / "weekly_summary.txt").write_text(summary)
     
 
 
