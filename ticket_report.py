@@ -35,8 +35,8 @@ def load_tickets(path):
 def volume_by_category(tickets):
     """How many tickets per category?"""
 
-    # Returns the value counts of each category, as a percentage of total tickets.
-    return (tickets['category'].value_counts(normalize=True) * 100).round(1)
+    # Returns the value counts of each category.
+    return (tickets['category'].value_counts())
 
 
   
@@ -45,13 +45,15 @@ def volume_by_category(tickets):
 def backlog(tickets):
     """Open tickets with their age in days, oldest first."""
     # Returns a DataFrame of open tickets, sorted by age_days descending.
-    return tickets[tickets['status'] != 'Closed'].sort_values('age_days', ascending=False)
+    return tickets[tickets['status'] != 'Closed'].sort_values('age_days', ascending=False)[['ticket_id', 'created', 'category', 'priority', 'status', 'assignee', 'age_days']]
 
+  
 
 def unassigned(tickets):
     """Open tickets with nobody assigned."""
     # Returns a dataframe with open tickets that have no employee assigned.
-    return tickets[tickets['assignee'].isna() & (tickets['status'] != 'Closed')]
+    return tickets[tickets['assignee'].isna() & (tickets['status'] != 'Closed')][['ticket_id', 'created', 'category', 'priority', 'status', 'assignee', 'age_days']]
+
 
 
 
@@ -68,7 +70,7 @@ def sla_summary(tickets):
 
     # Merge the SLA targets onto the closed tickets, then calculate whether each ticket breached its SLA.
     closed = closed.merge(SLA_TARGETS, on='priority', how='left')
-    # Calculate the resolution time in hours, and whether it breached the SLA.
+    # Calculate whether each ticket breached the SLA.
     closed['sla_breached'] = closed['resolution_hours'] > closed['sla_hours']
     # Group by priority, count tickets, sum breaches, and calculate breach rate.
     summary = closed.groupby('priority')['sla_breached'].agg(['count', 'sum', 'mean'])
