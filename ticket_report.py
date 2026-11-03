@@ -84,19 +84,25 @@ def main():
     tickets = load_tickets(DATA_FILE)
     print(f"Loaded {len(tickets)} tickets")
 
+
     categories = volume_by_category(tickets)
+    print('\nTickets by category:')
     print(categories)
 
     open_queue = backlog(tickets)
+    print('\nOpen tickets (oldest first):')
     print(open_queue)
 
     no_owner = unassigned(tickets)
+    print('\nUnassigned tickets:')
     print(no_owner)
 
     ticket_workload = workload(tickets)
+    print('\nWorkload per assignee:')
     print(ticket_workload)
 
     breach_of_sla = sla_summary(tickets)
+    print('\nSLA summary:')
     print(breach_of_sla)
 
     # call each function, print the result, save to OUTPUT_DIR
