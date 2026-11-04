@@ -5,9 +5,9 @@ This is a Python script designed to turn raw help-desk tickets into weekly repor
 I wrote this Python script to help me practice pandas and NumPy on the kind of reporting an IT support team would work through every week.
 
 ## How to run it
-To run it proceed with downloading the requirements; found in requirements.txt
-Run generate_tickets.py to generate the tickets.csv
-Then run the ticket_report.py script to create the weekly_summary.txt; found in the /output folder. The script also writes give CSV reports.
+1. To run it, proceed with downloading the requirements, found in requirements.txt.
+2. Run generate_tickets.py to generate the tickets.csv.
+3. Then run the ticket_report.py script to create the weekly_summary.txt; found in the `/output `folder. The script also writes five CSV reports.
 Reports are saved to 'output/' folder.
 ```bash
 pip install -r requirements.txt
